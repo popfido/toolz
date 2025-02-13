@@ -1,9 +1,10 @@
 @charset "utf-8"
 
-@import "./settings/variables"
+@use "sass:meta"
+@use "settings/variables"
 
-@import "./theme/light"
-@import "./theme/dark"
+@use "theme/light"
+@use "theme/dark"
 $or-50: '#ffffff'
 $or-100: '#fdddde'
 $or-200: '#fababd'
@@ -32,31 +33,31 @@ body
 	background-size: 400% 100%
 	height: auto
 
-@import "./base/basic"
-@import "./extra/aos"
-@import "./elements/typography"
+@include meta.load-css("base/basic")
+@include meta.load-css("extra/aos")
+@include meta.load-css("elements/typography")
 
-@import "./layout/navbar"
-@import "./layout/header"
-@import "./layout/container"
-@import "./layout/grid"
-@import "./layout/footer"
+@include meta.load-css("layout/navbar")
+@include meta.load-css("layout/header")
+@include meta.load-css("layout/container")
+@include meta.load-css("layout/grid")
+@include meta.load-css("layout/footer")
 
-@import "./elements/button"
-@import "./components/card"
-@import "./elements/form"
-@import "./components/modal"
-@import "./components/gotop_link"
-@import "./extra/tooltip"
-@import "./extra/alert"
+@include meta.load-css("elements/button")
+@include meta.load-css("components/card")
+@include meta.load-css("elements/form")
+@include meta.load-css("components/modal")
+@include meta.load-css("components/gotop_link")
+@include meta.load-css("extra/tooltip")
+@include meta.load-css("extra/alert")
 
-@import "./utilities/alignment"
-@import "./utilities/background"
-@import "./utilities/position"
-@import "./utilities/border"
-@import "./utilities/display"
-@import "./utilities/margin"
-@import "./utilities/general"
-@import "./utilities/padding"
-@import "./utilities/spacer"
-@import "./utilities/text"
+@include meta.load-css("utilities/alignment")
+@include meta.load-css("utilities/background")
+@include meta.load-css("utilities/position")
+@include meta.load-css("utilities/border")
+@include meta.load-css("utilities/display")
+@include meta.load-css("utilities/margin")
+@include meta.load-css("utilities/general")
+@include meta.load-css("utilities/padding")
+@include meta.load-css("utilities/spacer")
+@include meta.load-css("utilities/text")
